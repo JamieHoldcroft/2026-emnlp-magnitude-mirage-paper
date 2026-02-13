@@ -1,0 +1,16 @@
+{
+  "nomic": {
+    "gpu_memory_gb": 0.51,
+    "current_memory_gb": 0.51,
+    "model_path": "/leonardo_scratch/fast/L-AUT_024/.cache/huggingface/models--nomic-ai--nomic-embed-text-v1.5/snapshots/e5cf08aadaa33385f5990def41f7a23405aec398",
+    "model_type": "auto_model",
+    "uses_gpu": true
+  },
+  "diver-retriever": {
+    "gpu_memory_gb": 15.09,
+    "current_memory_gb": 15.09,
+    "model_path": "/leonardo_scratch/fast/L-AUT_024/.cache/huggingface/models--AQ-MedAI--Diver-Retriever-4B/snapshots/ff7f8bc8d1827734dcf2bbfab99f065be618069a",
+    "model_type": "auto_model",
+    "uses_gpu": true
+  }
+}

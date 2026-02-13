@@ -1,0 +1,86 @@
+{
+  "bge": {
+    "ndcg10": 0.1371,
+    "qps": 99.31,
+    "category": "Dense",
+    "pareto_optimal": false
+  },
+  "bm25": {
+    "ndcg10": 0.1451,
+    "qps": 58.0,
+    "category": "Sparse",
+    "pareto_optimal": false
+  },
+  "contriever": {
+    "ndcg10": 0.1111,
+    "qps": 119.33,
+    "category": "Dense",
+    "pareto_optimal": false
+  },
+  "diver-retriever": {
+    "ndcg10": 0.2922,
+    "qps": 37.46,
+    "category": "Reasoning",
+    "pareto_optimal": true
+  },
+  "e5": {
+    "ndcg10": 0.1793,
+    "qps": 10.75,
+    "category": "Dense",
+    "pareto_optimal": false
+  },
+  "inst-l": {
+    "ndcg10": 0.1421,
+    "qps": 60.54,
+    "category": "Instruct",
+    "pareto_optimal": false
+  },
+  "inst-xl": {
+    "ndcg10": 0.1893,
+    "qps": 25.88,
+    "category": "Instruct",
+    "pareto_optimal": false
+  },
+  "nomic": {
+    "ndcg10": 0.1418,
+    "qps": 73.67,
+    "category": "Dense",
+    "pareto_optimal": false
+  },
+  "qwen": {
+    "ndcg10": 0.2248,
+    "qps": 11.76,
+    "category": "LLM-based",
+    "pareto_optimal": false
+  },
+  "qwen2": {
+    "ndcg10": 0.2332,
+    "qps": 11.85,
+    "category": "LLM-based",
+    "pareto_optimal": false
+  },
+  "rader": {
+    "ndcg10": 0.2351,
+    "qps": 38.12,
+    "category": "Reasoning",
+    "pareto_optimal": true
+  },
+  "reasonir": {
+    "ndcg10": 0.2411,
+    "qps": 32.61,
+    "category": "Reasoning",
+    "pareto_optimal": false
+  },
+  "sbert": {
+    "ndcg10": 0.1491,
+    "qps": 204.02,
+    "category": "Dense",
+    "pareto_optimal": true
+  },
+  "sf": {
+    "ndcg10": 0.183,
+    "qps": 10.71,
+    "category": "Instruct",
+    "pareto_optimal": false
+  }
+}

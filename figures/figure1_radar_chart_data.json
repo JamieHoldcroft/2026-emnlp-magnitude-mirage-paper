@@ -1,0 +1,54 @@
+{
+  "raw": {
+    "effectiveness": {
+      "e5": 0.1793,
+      "bge": 0.1371,
+      "qwen2": 0.2332,
+      "reasonir": 0.2283
+    },
+    "efficiency_qps": {
+      "e5": 10.75,
+      "bge": 99.31,
+      "qwen2": 11.85,
+      "reasonir": 31.58
+    },
+    "robustness": {
+      "e5": 0.9652,
+      "bge": 0.9827,
+      "qwen2": 1.0245,
+      "reasonir": 0.8914
+    },
+    "calibration": {
+      "e5": 0.546,
+      "bge": 0.5382,
+      "qwen2": 0.5699,
+      "reasonir": 0.555
+    }
+  },
+  "normalized": {
+    "e5": {
+      "Effectiveness": 0.524,
+      "Efficiency": 0.15,
+      "Robustness": 0.622,
+      "Calibration": 0.359
+    },
+    "bge": {
+      "Effectiveness": 0.15,
+      "Efficiency": 1.0,
+      "Robustness": 0.733,
+      "Calibration": 0.15
+    },
+    "qwen2": {
+      "Effectiveness": 1.0,
+      "Efficiency": 0.161,
+      "Robustness": 1.0,
+      "Calibration": 1.0
+    },
+    "reasonir": {
+      "Effectiveness": 0.957,
+      "Efficiency": 0.35,
+      "Robustness": 0.15,
+      "Calibration": 0.601
+    }
+  }
+}

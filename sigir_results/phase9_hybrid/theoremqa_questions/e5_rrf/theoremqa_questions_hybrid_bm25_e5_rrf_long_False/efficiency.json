@@ -1,0 +1,15 @@
+{
+  "indexing": {
+    "total_time_seconds": 40.48019075393677,
+    "documents_per_second": 4644.296296496985,
+    "used_cache": null
+  },
+  "query_latency": {
+    "total": {
+      "total_time_seconds": 39.36273241043091,
+      "num_queries": 194,
+      "qps": 4.928519645871715,
+      "mean_ms": 202.90068252799438
+    }
+  }
+}
