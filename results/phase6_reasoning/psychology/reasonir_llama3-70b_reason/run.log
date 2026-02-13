@@ -1,0 +1,21 @@
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 02-08 21:35:03 [__init__.py:216] Automatically detected platform cuda.
+Dataset source: xlangai/BRIGHT
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'llama3-70b_reason' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/llama3-70b_reason/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Sat Feb  7 03:53:35 2026).
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'documents' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/documents/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Thu Feb  5 21:44:01 2026).
+The scores file does not exist, start retrieving...
+101 queries
+52835 documents
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 106.65it/s]
+WARNING: No config instructions found for ReasonIR. Using default instructions.
+doc max length: 32768
+query max length: 32768
+  0%|          | 0/101 [00:00<?, ?it/s]100%|██████████| 101/101 [00:00<00:00, 18081.21it/s]
+sigir_results/phase6_reasoning/psychology/reasonir_llama3-70b_reason/psychology_reasonir_long_False
+{'NDCG@1': 0.34653, 'NDCG@5': 0.34355, 'NDCG@10': 0.37684, 'NDCG@25': 0.41486, 'NDCG@50': 0.44143, 'NDCG@100': 0.4621, 'MAP@1': 0.14113, 'MAP@5': 0.23443, 'MAP@10': 0.2761, 'MAP@25': 0.30228, 'MAP@50': 0.31297, 'MAP@100': 0.31757, 'Recall@1': 0.14113, 'Recall@5': 0.31507, 'Recall@10': 0.44692, 'Recall@25': 0.61126, 'Recall@50': 0.69942, 'Recall@100': 0.77637, 'P@1': 0.34653, 'P@5': 0.21188, 'P@10': 0.16535, 'P@25': 0.09703, 'P@50': 0.06297, 'P@100': 0.03733, 'MRR': 0.43454, 'Oracle NDCG@1': 0.94059, 'Oracle NDCG@5': 0.86417, 'Oracle NDCG@10': 0.84619, 'Oracle NDCG@25': 0.82129, 'Oracle NDCG@50': 0.81269, 'Oracle NDCG@100': 0.81552}

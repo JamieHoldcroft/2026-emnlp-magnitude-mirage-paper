@@ -1,0 +1,7 @@
+/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Dataset source: xlangai/BRIGHT
+sigir_results/phase6_reasoning/biology/qwen_Gemini-1.0_reason/biology_qwen_long_False/Gemini-1.0_reason_score.json exists
+  0%|          | 0/103 [00:00<?, ?it/s]100%|██████████| 103/103 [00:00<00:00, 23587.95it/s]
+sigir_results/phase6_reasoning/biology/qwen_Gemini-1.0_reason/biology_qwen_long_False
+{'NDCG@1': 0.30097, 'NDCG@5': 0.31144, 'NDCG@10': 0.34676, 'NDCG@25': 0.38341, 'NDCG@50': 0.41676, 'NDCG@100': 0.43906, 'MAP@1': 0.0864, 'MAP@5': 0.21252, 'MAP@10': 0.24772, 'MAP@25': 0.26666, 'MAP@50': 0.27545, 'MAP@100': 0.27917, 'Recall@1': 0.0864, 'Recall@5': 0.3099, 'Recall@10': 0.42271, 'Recall@25': 0.52959, 'Recall@50': 0.65297, 'Recall@100': 0.74639, 'P@1': 0.30097, 'P@5': 0.22136, 'P@10': 0.15534, 'P@25': 0.08039, 'P@50': 0.04854, 'P@100': 0.02777, 'MRR': 0.42832, 'Oracle NDCG@1': 0.87379, 'Oracle NDCG@5': 0.78302, 'Oracle NDCG@10': 0.7782, 'Oracle NDCG@25': 0.7772, 'Oracle NDCG@50': 0.7772, 'Oracle NDCG@100': 0.7772}

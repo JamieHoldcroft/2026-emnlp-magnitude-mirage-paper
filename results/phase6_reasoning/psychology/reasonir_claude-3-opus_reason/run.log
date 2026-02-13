@@ -1,0 +1,21 @@
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 02-08 21:35:39 [__init__.py:216] Automatically detected platform cuda.
+Dataset source: xlangai/BRIGHT
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'claude-3-opus_reason' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/claude-3-opus_reason/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Sat Feb  7 03:53:48 2026).
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'documents' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/documents/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Thu Feb  5 21:44:01 2026).
+The scores file does not exist, start retrieving...
+101 queries
+52835 documents
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 112.05it/s]
+WARNING: No config instructions found for ReasonIR. Using default instructions.
+doc max length: 32768
+query max length: 32768
+  0%|          | 0/101 [00:00<?, ?it/s]100%|██████████| 101/101 [00:00<00:00, 18986.41it/s]
+sigir_results/phase6_reasoning/psychology/reasonir_claude-3-opus_reason/psychology_reasonir_long_False
+{'NDCG@1': 0.37624, 'NDCG@5': 0.36686, 'NDCG@10': 0.40145, 'NDCG@25': 0.43115, 'NDCG@50': 0.46309, 'NDCG@100': 0.48726, 'MAP@1': 0.1713, 'MAP@5': 0.25473, 'MAP@10': 0.29559, 'MAP@25': 0.32532, 'MAP@50': 0.33623, 'MAP@100': 0.34182, 'Recall@1': 0.1713, 'Recall@5': 0.32392, 'Recall@10': 0.45887, 'Recall@25': 0.58159, 'Recall@50': 0.70439, 'Recall@100': 0.79674, 'P@1': 0.37624, 'P@5': 0.2198, 'P@10': 0.1703, 'P@25': 0.10376, 'P@50': 0.06535, 'P@100': 0.03931, 'MRR': 0.4659, 'Oracle NDCG@1': 0.94059, 'Oracle NDCG@5': 0.87514, 'Oracle NDCG@10': 0.86123, 'Oracle NDCG@25': 0.83879, 'Oracle NDCG@50': 0.83018, 'Oracle NDCG@100': 0.83272}

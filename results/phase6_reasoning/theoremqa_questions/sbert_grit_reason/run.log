@@ -1,0 +1,7 @@
+/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Dataset source: xlangai/BRIGHT
+sigir_results/phase6_reasoning/theoremqa_questions/sbert_grit_reason/theoremqa_questions_sbert_long_False/grit_reason_score.json exists
+  0%|          | 0/194 [00:00<?, ?it/s] 19%|█▊        | 36/194 [00:00<00:00, 356.60it/s] 44%|████▍     | 85/194 [00:00<00:00, 425.73it/s] 74%|███████▎  | 143/194 [00:00<00:00, 493.02it/s] 99%|█████████▉| 193/194 [00:00<00:00, 480.87it/s]100%|██████████| 194/194 [00:00<00:00, 468.94it/s]
+sigir_results/phase6_reasoning/theoremqa_questions/sbert_grit_reason/theoremqa_questions_sbert_long_False
+{'NDCG@1': 0.15464, 'NDCG@5': 0.15548, 'NDCG@10': 0.16103, 'NDCG@25': 0.17267, 'NDCG@50': 0.17996, 'NDCG@100': 0.18496, 'MAP@1': 0.10039, 'MAP@5': 0.13972, 'MAP@10': 0.14294, 'MAP@25': 0.14628, 'MAP@50': 0.14759, 'MAP@100': 0.14807, 'Recall@1': 0.10039, 'Recall@5': 0.15924, 'Recall@10': 0.17329, 'Recall@25': 0.21109, 'Recall@50': 0.24374, 'Recall@100': 0.26908, 'P@1': 0.15464, 'P@5': 0.05979, 'P@10': 0.03299, 'P@25': 0.01649, 'P@50': 0.00938, 'P@100': 0.00521, 'MRR': 0.19, 'Oracle NDCG@1': 0.36082, 'Oracle NDCG@5': 0.2894, 'Oracle NDCG@10': 0.28873, 'Oracle NDCG@25': 0.28873, 'Oracle NDCG@50': 0.28873, 'Oracle NDCG@100': 0.28873}

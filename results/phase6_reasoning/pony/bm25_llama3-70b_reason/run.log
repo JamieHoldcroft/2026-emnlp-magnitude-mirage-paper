@@ -1,0 +1,13 @@
+/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+INFO 02-01 02:06:05 [__init__.py:235] Automatically detected platform cuda.
+WARNING: Using incubator modules: jdk.incubator.vector
+Dataset source: xlangai/BRIGHT
+The scores file does not exist, start retrieving...
+112 queries
+7894 documents
+BM25 retrieval:   0%|          | 0/112 [00:00<?, ?it/s]BM25 retrieval:  11%|█         | 12/112 [00:00<00:00, 115.02it/s]BM25 retrieval:  28%|██▊       | 31/112 [00:00<00:00, 157.52it/s]BM25 retrieval:  45%|████▍     | 50/112 [00:00<00:00, 171.48it/s]BM25 retrieval:  66%|██████▌   | 74/112 [00:00<00:00, 197.56it/s]BM25 retrieval:  88%|████████▊ | 98/112 [00:00<00:00, 212.27it/s]BM25 retrieval: 100%|██████████| 112/112 [00:00<00:00, 195.10it/s]
+Dedup Scores shape 112
+  0%|          | 0/112 [00:00<?, ?it/s]100%|██████████| 112/112 [00:00<00:00, 23955.23it/s]
+sigir_results/phase6_reasoning/pony/bm25_llama3-70b_reason/pony_bm25_long_False
+{'NDCG@1': 0.16071, 'NDCG@5': 0.14837, 'NDCG@10': 0.13648, 'NDCG@25': 0.14538, 'NDCG@50': 0.20241, 'NDCG@100': 0.26702, 'MAP@1': 0.00846, 'MAP@5': 0.02348, 'MAP@10': 0.03112, 'MAP@25': 0.04745, 'MAP@50': 0.06163, 'MAP@100': 0.07574, 'Recall@1': 0.00846, 'Recall@5': 0.03855, 'Recall@10': 0.06498, 'Recall@25': 0.15468, 'Recall@50': 0.26382, 'Recall@100': 0.4105, 'P@1': 0.16071, 'P@5': 0.14464, 'P@10': 0.12768, 'P@25': 0.115, 'P@50': 0.10036, 'P@100': 0.0783, 'MRR': 0.3119, 'Oracle NDCG@1': 0.99107, 'Oracle NDCG@5': 0.95001, 'Oracle NDCG@10': 0.82635, 'Oracle NDCG@25': 0.56015, 'Oracle NDCG@50': 0.55752, 'Oracle NDCG@100': 0.55752}

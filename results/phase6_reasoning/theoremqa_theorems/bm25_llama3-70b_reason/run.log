@@ -1,0 +1,13 @@
+/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+INFO 01-30 09:15:04 [__init__.py:216] Automatically detected platform cuda.
+WARNING: Using incubator modules: jdk.incubator.vector
+Dataset source: xlangai/BRIGHT
+The scores file does not exist, start retrieving...
+76 queries
+23839 documents
+BM25 retrieval:   0%|          | 0/76 [00:00<?, ?it/s]BM25 retrieval:   7%|▋         | 5/76 [00:00<00:01, 46.51it/s]BM25 retrieval:  17%|█▋        | 13/76 [00:00<00:01, 61.97it/s]BM25 retrieval:  28%|██▊       | 21/76 [00:00<00:00, 65.68it/s]BM25 retrieval:  37%|███▋      | 28/76 [00:00<00:00, 64.42it/s]BM25 retrieval:  47%|████▋     | 36/76 [00:00<00:00, 67.25it/s]BM25 retrieval:  58%|█████▊    | 44/76 [00:00<00:00, 68.95it/s]BM25 retrieval:  67%|██████▋   | 51/76 [00:00<00:00, 67.60it/s]BM25 retrieval:  78%|███████▊  | 59/76 [00:00<00:00, 70.05it/s]BM25 retrieval:  88%|████████▊ | 67/76 [00:00<00:00, 71.79it/s]BM25 retrieval:  99%|█████████▊| 75/76 [00:01<00:00, 72.66it/s]BM25 retrieval: 100%|██████████| 76/76 [00:01<00:00, 64.37it/s]
+Dedup Scores shape 76
+  0%|          | 0/76 [00:00<?, ?it/s]100%|██████████| 76/76 [00:00<00:00, 28973.56it/s]
+sigir_results/phase6_reasoning/theoremqa_theorems/bm25_llama3-70b_reason/theoremqa_theorems_bm25_long_False
+{'NDCG@1': 0.11842, 'NDCG@5': 0.1452, 'NDCG@10': 0.17504, 'NDCG@25': 0.18257, 'NDCG@50': 0.19719, 'NDCG@100': 0.20721, 'MAP@1': 0.07237, 'MAP@5': 0.12171, 'MAP@10': 0.13584, 'MAP@25': 0.1388, 'MAP@50': 0.141, 'MAP@100': 0.14189, 'Recall@1': 0.07237, 'Recall@5': 0.17105, 'Recall@10': 0.2511, 'Recall@25': 0.27522, 'Recall@50': 0.33882, 'Recall@100': 0.39035, 'P@1': 0.11842, 'P@5': 0.06053, 'P@10': 0.04342, 'P@25': 0.01947, 'P@50': 0.01237, 'P@100': 0.00724, 'MRR': 0.17813, 'Oracle NDCG@1': 0.48684, 'Oracle NDCG@5': 0.41468, 'Oracle NDCG@10': 0.41468, 'Oracle NDCG@25': 0.41468, 'Oracle NDCG@50': 0.41894, 'Oracle NDCG@100': 0.41894}

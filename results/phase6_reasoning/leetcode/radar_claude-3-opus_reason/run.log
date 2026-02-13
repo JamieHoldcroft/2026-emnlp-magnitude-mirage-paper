@@ -1,0 +1,25 @@
+/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+usage: run.py [-h] --task
+              {biology,earth_science,economics,pony,psychology,robotics,stackoverflow,sustainable_living,aops,leetcode,theoremqa_theorems,theoremqa_questions}
+              --model
+              {bm25,cohere,e5,google,grit,inst-l,inst-xl,openai,qwen,qwen2,sbert,sf,voyage,bge,bge_ce,nomic,m2,contriever,reasonir,rader,diver-retriever,hybrid}
+              [--model_id MODEL_ID] [--long_context]
+              [--dataset_source DATASET_SOURCE]
+              [--document_expansion {None,gold,full,rechunk}]
+              [--global_summary {None,concat}]
+              [--query_max_length QUERY_MAX_LENGTH]
+              [--doc_max_length DOC_MAX_LENGTH] [--corpus_size CORPUS_SIZE]
+              [--quantization {fp32,fp16,bf16,int8,int4}]
+              [--encode_batch_size ENCODE_BATCH_SIZE]
+              [--output_dir OUTPUT_DIR] [--cache_dir CACHE_DIR]
+              [--hf_cache_dir HF_CACHE_DIR] [--config_dir CONFIG_DIR]
+              [--checkpoint CHECKPOINT] [--key KEY] [--input_file INPUT_FILE]
+              [--reasoning REASONING] [--reasoning_id REASONING_ID]
+              [--reasoning_length_limit REASONING_LENGTH_LIMIT]
+              [--separate_reasoning] [--debug] [--ignore_cache] [--no_log]
+              [--sweep_output_dir SWEEP_OUTPUT_DIR] [--skip_doc_emb]
+              [--store_all_scores] [--fusion_method {rrf,linear,dynamic}]
+              [--dense_model {e5,qwen2,bge,reasonir,grit,qwen,sf}]
+              [--linear_weights LINEAR_WEIGHTS]
+run.py: error: argument --model: invalid choice: 'radar' (choose from 'bm25', 'cohere', 'e5', 'google', 'grit', 'inst-l', 'inst-xl', 'openai', 'qwen', 'qwen2', 'sbert', 'sf', 'voyage', 'bge', 'bge_ce', 'nomic', 'm2', 'contriever', 'reasonir', 'rader', 'diver-retriever', 'hybrid')

@@ -1,0 +1,21 @@
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 02-08 21:16:17 [__init__.py:216] Automatically detected platform cuda.
+Dataset source: xlangai/BRIGHT
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'llama3-70b_reason' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/llama3-70b_reason/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Sat Feb  7 03:53:35 2026).
+Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'documents' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/documents/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Thu Feb  5 21:44:01 2026).
+The scores file does not exist, start retrieving...
+103 queries
+57359 documents
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 110.57it/s]
+WARNING: No config instructions found for ReasonIR. Using default instructions.
+doc max length: 32768
+query max length: 32768
+  0%|          | 0/103 [00:00<?, ?it/s]100%|██████████| 103/103 [00:00<00:00, 19381.49it/s]
+sigir_results/phase6_reasoning/biology/reasonir_llama3-70b_reason/biology_reasonir_long_False
+{'NDCG@1': 0.42718, 'NDCG@5': 0.39822, 'NDCG@10': 0.43329, 'NDCG@25': 0.47922, 'NDCG@50': 0.51214, 'NDCG@100': 0.53491, 'MAP@1': 0.12662, 'MAP@5': 0.28329, 'MAP@10': 0.32489, 'MAP@25': 0.35208, 'MAP@50': 0.36034, 'MAP@100': 0.36368, 'Recall@1': 0.12662, 'Recall@5': 0.39577, 'Recall@10': 0.50814, 'Recall@25': 0.63735, 'Recall@50': 0.75339, 'Recall@100': 0.8552, 'P@1': 0.42718, 'P@5': 0.25825, 'P@10': 0.17476, 'P@25': 0.09282, 'P@50': 0.05534, 'P@100': 0.03078, 'MRR': 0.54357, 'Oracle NDCG@1': 0.95146, 'Oracle NDCG@5': 0.88254, 'Oracle NDCG@10': 0.88003, 'Oracle NDCG@25': 0.87936, 'Oracle NDCG@50': 0.87936, 'Oracle NDCG@100': 0.87996}
