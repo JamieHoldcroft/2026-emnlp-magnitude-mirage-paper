@@ -1,88 +1,69 @@
-# Experimental Phases Documentation
+# Experiment Documentation
 
 ## Overview
 
-This document describes the **14-phase experimental pipeline** for reproducing and extending LLM retrieval results on the BRIGHT benchmark. Each phase focuses on a different aspect of retrieval system performance: indexing efficiency, query latency, scalability, quantization, context length, reasoning enhancement, document expansion, long-context retrieval, **hybrid fusion, robustness testing, cross-benchmark generalization, two-stage pipelines, cost analysis, and concurrency testing**.
+This document describes the **experiments and evaluation framework** for evaluating retrieval confidence signals on the BRIGHT benchmark. Each experiment focuses on a different retrieval confidence signal that is currently practiced in modern RAG systems: ___.
 
-**Total Experiments**: ~3,320 experiments across all 14 phases
-- Original phases (1-8): ~2,088 experiments
-- **NEW phases (9-14): ~1,232 experiments**
+**Total Experiments:** ~X unique experiments across all ```exp``` files.
 
 **Datasets**:
 - **BRIGHT**: All 12 tasks (biology, earth_science, economics, psychology, robotics, stackoverflow, sustainable_living, leetcode, pony, aops, theoremqa_questions, theoremqa_theorems)
-- **BEIR**: 13 datasets (Phase 11)
+- **BEIR**: 13 datasets (arguana, fiqa, nfcorpus, quora, scidocs, scifact, trec-covid, dbpedia-entity, fever, hotpotqa, nq, climate-fever, touche-2020)
 
-**Models**: 17+ models tested across phases (see [MODELS.md](MODELS.md) for details)
+**Models**: 17+ models tested across both BRIGHT and BEIR.
 
 ---
 
-## Phase Dependencies
+## Experiment (Exp) Dependencies
 
 ```
-Phase 1 (REQUIRED FIRST)
+Exp 1 & Exp 2 (Required First)
    ↓
-   ├──→ Phase 2 (reuses cache)
-   └──→ Phase 6 (reuses cache)
-
-Phase 3 (independent)
-Phase 4 (independent)
-Phase 5 (independent)
-Phase 7 (independent)
-Phase 8 (independent)
+   ├──→ Exp 3 (reuses cache)
+   └──→ Exp 4 (reuses cache)
+   ...
 ```
 
 **Key Points**:
-- **Phase 1 MUST run first** - it builds the document embedding cache
-- **Phases 2 & 6** reuse Phase 1's cache (no re-indexing, very efficient!)
-- **Phases 3, 4, 5, 7, 8** are independent and create their own caches
+- **Exp 1 and Exp 2 MUST run first** - they build the document embedding cache
+- **All proceeding experiments reuse the cached results**
 
 ---
 
 ## Quick Reference Table
 
-| Phase | Name | Purpose | Experiments | Runtime | Cache | Depends On |
+| Exp | Name | Purpose | # Experiments | Runtime | Cache | Depends On |
 |-------|------|---------|-------------|---------|-------|------------|
-| 1 | Cache Build | Build embeddings + measure indexing time | 204 | 48-72h | Creates `cache/` | None |
-| 2 | Efficiency | Measure query latency & QPS | 204 | 24-36h | Reuses Phase 1 | Phase 1 |
-| 3 | Scaling | Test corpus size impact | 84 | 12-24h | `cache_scaling/` | None |
-| 4 | Quantization | Test precision trade-offs | 60 | 10-20h | `cache_quantization/` | None |
-| 5 | Length | Test document length impact | 72 | 12-24h | `cache_length/` | None |
-| 6 | Reasoning | Compare reasoning queries ⭐ | 1,224 | 36-48h | Reuses Phase 1 | Phase 1 |
-| 7 | Expansion | Test document expansion | 36 | 8-16h | `cache_expansion/` | None |
-| 8 | Long Context | Test long documents | 204 | 24-36h | `cache_long/` | None |
-| **9** | **Hybrid Fusion** ⭐ | **Sparse+Dense fusion (RRF, Linear, DAT)** | **144** | **18-24h** | **Reuses Phase 1** | **Phase 1** |
-| **10** | **Robustness** ⭐ | **Query perturbations & adversarial tests** | **540** | **30-40h** | **Reuses Phase 1** | **Phase 1** |
-| **11** | **Cross-Benchmark** | **BEIR generalization testing** | **221** | **36-48h** | **`cache_beir/`** | **None** |
-| **12** | **Two-Stage** | **Retrieve-then-rerank pipelines** | **36** | **10-16h** | **Reuses Phase 1** | **Phase 1** |
-| **13** | **Cost Analysis** | **Compute & API cost tracking** | **216** | **24-30h** | **Reuses Phase 1** | **Phase 1** |
-| **14** | **Concurrency** | **Load testing & throughput** | **75** | **8-12h** | **Reuses Phase 1** | **Phase 1** |
-
-⭐ = Main contribution of the paper
-**Bold** = NEW phases (9-14)
+| 1 | Cache Build for BRIGHT | Cache Retrieval Scores on BRIGHT | X | 48-72h | Creates `cache/` | None |
+| 2 | Cache Build for BEIR | Cache Retrieval Scores on BEIR | X | 48-72h | Creates `cache/` | None |
+| 3 | Efficiency | Measure query latency & QPS | 204 | 24-36h | Reuses Cache | Exp 1 and Exp 2 |
+| 4 | Scaling | Test corpus size impact | 84 | 12-24h | Reuses Cache | Exp 1 and Exp 2 |
+| 5 | Quantization | Test precision trade-offs | 60 | 10-20h | Reuses Cache | Exp 1 and Exp 2 |
+| 6 | Length | Test document length impact | 72 | 12-24h | Reuses Cache | Exp 1 and Exp 2 |
 
 ---
 
-## Detailed Phase Descriptions
+## Detailed Experiment Descriptions
 
-### Phase 1: Build Cache + Measure TRUE Indexing Time
+### Exp 1: Build Cache
 
 **Script**: `scripts/phase1_build_cache.sh`
 
 #### Purpose
-Create document embeddings for all models on all tasks and measure the **TRUE indexing time** (cold start, no cache). This is the foundation for all subsequent experiments.
+Compute and cache retrieval scores for all models on all tasks in BRIGHT. This is the foundation for all subsequent experiments on BRIGHT.
 
 #### Configuration
-- **Models**: All 17 non-API models
-  - Small/Medium: `bm25`, `sbert`, `bge`, `contriever`, `nomic`, `inst-l`
-  - Large: `sf`, `e5`, `qwen`, `qwen2`, `grit`, `inst-xl`, `m2`, `reasonir`, `rader`, `diver-retriever`
-  - Cross-encoder: `bge_ce`
+- **Models**: All 16 non-API models
+  - Sparse Retrievers: `bm25`
+  - Small Dense Bi-Encoders: `sbert`, `bge`, `contriever`, `nomic`, `inst-l`
+  - Large Dense Bi-Encoders: `sf`, `e5`, `qwen`, `qwen2`, `grit`,  `inst-l`, `m2`
+  - Reasoning-Augmented Bi-Encoders: `reasonir`, `rader`, `diver-retriever`
 - **Tasks**: All 12 BRIGHT tasks
-- **Total Experiments**: 17 models × 12 tasks = **204 experiments**
+- **Total Experiments**: 16 models × 12 tasks = **192 experiments**
 
 #### Cache Strategy
 - **Creates**: `cache/` directory
 - **Structure**: `cache/doc_emb/{model}/{task}/long_False_{batch_size}/{chunk_id}.json`
-- **Persistence**: Cache is reused by Phases 2 and 6
 
 #### Outputs
 ```
