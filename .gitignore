@@ -1,26 +1,2 @@
 cache/
 .vscode/
-cache_length/
-cache_long/
-cache_quantization/
-cache_scaling/
-hf_cache/
-.claude
-data/
-docs/
-.geminiignore
-2507.06223v2.pdf
-CHANGES_SUMMARY.md
-FIXES_SUMMARY.md
-NEW_PHASES_SUMMARY.md
-SIGIR2026.md
-# --- SIGIR results: keep only small summaries ---
-sigir_results/**
-
-# allow git to traverse directories
-!sigir_results/**/
-
-# keep only these files
-!sigir_results/**/efficiency.json
-!sigir_results/**/results.json
-!sigir_results/**/master_indexing_times.json
