@@ -1,0 +1,21 @@
+{
+  "domain": "bitcoin",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.17008,
+    "temporal_precision@10": 0.5266,
+    "temporal_relevance@10": 0.38313,
+    "temporal_coverage@10": 0.5625,
+    "ndcg@10": 0.14301,
+    "ndcg_full_coverage@10": 0.06393
+  },
+  "counts": {
+    "total_temporal_queries": 88,
+    "total_cross_period_queries": 32
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

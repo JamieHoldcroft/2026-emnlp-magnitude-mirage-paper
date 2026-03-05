@@ -1,0 +1,21 @@
+{
+  "domain": "cardano",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.27692,
+    "temporal_precision@10": 0.52173,
+    "temporal_relevance@10": 0.31304,
+    "temporal_coverage@10": 0.63636,
+    "ndcg@10": 0.18449,
+    "ndcg_full_coverage@10": 0.17147
+  },
+  "counts": {
+    "total_temporal_queries": 46,
+    "total_cross_period_queries": 11
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

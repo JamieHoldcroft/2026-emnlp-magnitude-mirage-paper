@@ -1,0 +1,21 @@
+{
+  "domain": "history",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.32722,
+    "temporal_precision@10": 0.52144,
+    "temporal_relevance@10": 0.29448,
+    "temporal_coverage@10": 0.63983,
+    "ndcg@10": 0.28824,
+    "ndcg_full_coverage@10": 0.29152
+  },
+  "counts": {
+    "total_temporal_queries": 766,
+    "total_cross_period_queries": 236
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

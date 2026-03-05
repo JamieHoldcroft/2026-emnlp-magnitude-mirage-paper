@@ -1,0 +1,21 @@
+{
+  "domain": "quant",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.22917,
+    "temporal_precision@10": 0.29135,
+    "temporal_relevance@10": 0.10769,
+    "temporal_coverage@10": 0.38235,
+    "ndcg@10": 0.14252,
+    "ndcg_full_coverage@10": 0.19032
+  },
+  "counts": {
+    "total_temporal_queries": 28,
+    "total_cross_period_queries": 17
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

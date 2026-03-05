@@ -1,0 +1,21 @@
+{
+  "domain": "economics",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.26319,
+    "temporal_precision@10": 0.45398,
+    "temporal_relevance@10": 0.29444,
+    "temporal_coverage@10": 0.68519,
+    "ndcg@10": 0.20427,
+    "ndcg_full_coverage@10": 0.17592
+  },
+  "counts": {
+    "total_temporal_queries": 74,
+    "total_cross_period_queries": 54
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

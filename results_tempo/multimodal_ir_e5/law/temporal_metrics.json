@@ -1,0 +1,21 @@
+{
+  "domain": "law",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.39265,
+    "temporal_precision@10": 0.60404,
+    "temporal_relevance@10": 0.36667,
+    "temporal_coverage@10": 0.88462,
+    "ndcg@10": 0.32092,
+    "ndcg_full_coverage@10": 0.31829
+  },
+  "counts": {
+    "total_temporal_queries": 34,
+    "total_cross_period_queries": 13
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

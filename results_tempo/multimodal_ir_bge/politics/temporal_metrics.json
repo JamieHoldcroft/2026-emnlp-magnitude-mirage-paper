@@ -1,0 +1,21 @@
+{
+  "domain": "politics",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.33756,
+    "temporal_precision@10": 0.57558,
+    "temporal_relevance@10": 0.30867,
+    "temporal_coverage@10": 0.71277,
+    "ndcg@10": 0.28249,
+    "ndcg_full_coverage@10": 0.30332
+  },
+  "counts": {
+    "total_temporal_queries": 150,
+    "total_cross_period_queries": 94
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

@@ -1,0 +1,21 @@
+{
+  "domain": "iota",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.395,
+    "temporal_precision@10": 0.28095,
+    "temporal_relevance@10": 0.09,
+    "temporal_coverage@10": 0.3,
+    "ndcg@10": 0.37067,
+    "ndcg_full_coverage@10": 0.63668
+  },
+  "counts": {
+    "total_temporal_queries": 10,
+    "total_cross_period_queries": 5
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

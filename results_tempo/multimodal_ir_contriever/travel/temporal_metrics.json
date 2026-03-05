@@ -1,0 +1,21 @@
+{
+  "domain": "travel",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.34184,
+    "temporal_precision@10": 0.53726,
+    "temporal_relevance@10": 0.37553,
+    "temporal_coverage@10": 0.39583,
+    "ndcg@10": 0.24658,
+    "ndcg_full_coverage@10": 0.17925
+  },
+  "counts": {
+    "total_temporal_queries": 96,
+    "total_cross_period_queries": 24
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

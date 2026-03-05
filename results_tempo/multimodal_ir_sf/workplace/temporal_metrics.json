@@ -1,0 +1,21 @@
+{
+  "domain": "workplace",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.51429,
+    "temporal_precision@10": 0.42058,
+    "temporal_relevance@10": 0.26296,
+    "temporal_coverage@10": 0.2,
+    "ndcg@10": 0.36516,
+    "ndcg_full_coverage@10": 0.17724
+  },
+  "counts": {
+    "total_temporal_queries": 28,
+    "total_cross_period_queries": 10
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

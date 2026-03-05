@@ -1,0 +1,21 @@
+{
+  "domain": "genealogy",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.26017,
+    "temporal_precision@10": 0.43333,
+    "temporal_relevance@10": 0.25752,
+    "temporal_coverage@10": 0.45455,
+    "ndcg@10": 0.22166,
+    "ndcg_full_coverage@10": 0.3328
+  },
+  "counts": {
+    "total_temporal_queries": 115,
+    "total_cross_period_queries": 33
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

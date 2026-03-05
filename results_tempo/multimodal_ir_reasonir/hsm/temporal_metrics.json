@@ -1,0 +1,21 @@
+{
+  "domain": "hsm",
+  "averaged_metrics": {
+    "temporal_recall@10": 0.32902,
+    "temporal_precision@10": 0.61489,
+    "temporal_relevance@10": 0.41849,
+    "temporal_coverage@10": 0.84545,
+    "ndcg@10": 0.24791,
+    "ndcg_full_coverage@10": 0.20032
+  },
+  "counts": {
+    "total_temporal_queries": 147,
+    "total_cross_period_queries": 55
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5
+}

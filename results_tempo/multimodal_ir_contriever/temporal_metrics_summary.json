@@ -1,0 +1,310 @@
+{
+  "averaged_metrics": {
+    "temporal_recall@10": 0.28846,
+    "temporal_precision@10": 0.49629,
+    "temporal_relevance@10": 0.30311,
+    "temporal_coverage@10": 0.64136,
+    "ndcg@10": 0.23655,
+    "ndcg_full_coverage@10": 0.2625
+  },
+  "counts": {
+    "total_temporal_queries": 1640,
+    "total_cross_period_queries": 619
+  },
+  "per_domain": {
+    "bitcoin": {
+      "domain": "bitcoin",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.17547,
+        "temporal_precision@10": 0.42304,
+        "temporal_relevance@10": 0.30741,
+        "temporal_coverage@10": 0.53333,
+        "ndcg@10": 0.13516,
+        "ndcg_full_coverage@10": 0.12979
+      },
+      "counts": {
+        "total_temporal_queries": 88,
+        "total_cross_period_queries": 30
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "cardano": {
+      "domain": "cardano",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.17391,
+        "temporal_precision@10": 0.37142,
+        "temporal_relevance@10": 0.20217,
+        "temporal_coverage@10": 0.41667,
+        "ndcg@10": 0.11505,
+        "ndcg_full_coverage@10": 0.04836
+      },
+      "counts": {
+        "total_temporal_queries": 46,
+        "total_cross_period_queries": 12
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "economics": {
+      "domain": "economics",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.17447,
+        "temporal_precision@10": 0.44703,
+        "temporal_relevance@10": 0.26438,
+        "temporal_coverage@10": 0.64545,
+        "ndcg@10": 0.15505,
+        "ndcg_full_coverage@10": 0.16766
+      },
+      "counts": {
+        "total_temporal_queries": 74,
+        "total_cross_period_queries": 55
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "genealogy": {
+      "domain": "genealogy",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.29108,
+        "temporal_precision@10": 0.43391,
+        "temporal_relevance@10": 0.24554,
+        "temporal_coverage@10": 0.5,
+        "ndcg@10": 0.24952,
+        "ndcg_full_coverage@10": 0.28613
+      },
+      "counts": {
+        "total_temporal_queries": 115,
+        "total_cross_period_queries": 36
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "history": {
+      "domain": "history",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.30923,
+        "temporal_precision@10": 0.53309,
+        "temporal_relevance@10": 0.34454,
+        "temporal_coverage@10": 0.71784,
+        "ndcg@10": 0.26532,
+        "ndcg_full_coverage@10": 0.28368
+      },
+      "counts": {
+        "total_temporal_queries": 766,
+        "total_cross_period_queries": 241
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "hsm": {
+      "domain": "hsm",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.2602,
+        "temporal_precision@10": 0.53077,
+        "temporal_relevance@10": 0.31712,
+        "temporal_coverage@10": 0.75,
+        "ndcg@10": 0.18653,
+        "ndcg_full_coverage@10": 0.15926
+      },
+      "counts": {
+        "total_temporal_queries": 147,
+        "total_cross_period_queries": 54
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "iota": {
+      "domain": "iota",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.395,
+        "temporal_precision@10": 0.21583,
+        "temporal_relevance@10": 0.05,
+        "temporal_coverage@10": 0.2,
+        "ndcg@10": 0.38139,
+        "ndcg_full_coverage@10": 0.58557
+      },
+      "counts": {
+        "total_temporal_queries": 10,
+        "total_cross_period_queries": 5
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "law": {
+      "domain": "law",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.3902,
+        "temporal_precision@10": 0.56455,
+        "temporal_relevance@10": 0.30909,
+        "temporal_coverage@10": 0.73077,
+        "ndcg@10": 0.27081,
+        "ndcg_full_coverage@10": 0.30092
+      },
+      "counts": {
+        "total_temporal_queries": 34,
+        "total_cross_period_queries": 13
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "monero": {
+      "domain": "monero",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.12213,
+        "temporal_precision@10": 0.29925,
+        "temporal_relevance@10": 0.18036,
+        "temporal_coverage@10": 0.32,
+        "ndcg@10": 0.08801,
+        "ndcg_full_coverage@10": 0.10725
+      },
+      "counts": {
+        "total_temporal_queries": 58,
+        "total_cross_period_queries": 25
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "politics": {
+      "domain": "politics",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.386,
+        "temporal_precision@10": 0.55627,
+        "temporal_relevance@10": 0.28667,
+        "temporal_coverage@10": 0.75,
+        "ndcg@10": 0.3165,
+        "ndcg_full_coverage@10": 0.36493
+      },
+      "counts": {
+        "total_temporal_queries": 150,
+        "total_cross_period_queries": 96
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "quant": {
+      "domain": "quant",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.1619,
+        "temporal_precision@10": 0.29321,
+        "temporal_relevance@10": 0.10769,
+        "temporal_coverage@10": 0.32353,
+        "ndcg@10": 0.13424,
+        "ndcg_full_coverage@10": 0.24926
+      },
+      "counts": {
+        "total_temporal_queries": 28,
+        "total_cross_period_queries": 17
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "travel": {
+      "domain": "travel",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.34184,
+        "temporal_precision@10": 0.53726,
+        "temporal_relevance@10": 0.37553,
+        "temporal_coverage@10": 0.39583,
+        "ndcg@10": 0.24658,
+        "ndcg_full_coverage@10": 0.17925
+      },
+      "counts": {
+        "total_temporal_queries": 96,
+        "total_cross_period_queries": 24
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    },
+    "workplace": {
+      "domain": "workplace",
+      "averaged_metrics": {
+        "temporal_recall@10": 0.30595,
+        "temporal_precision@10": 0.47204,
+        "temporal_relevance@10": 0.18519,
+        "temporal_coverage@10": 0.31818,
+        "ndcg@10": 0.24617,
+        "ndcg_full_coverage@10": 0.33963
+      },
+      "counts": {
+        "total_temporal_queries": 28,
+        "total_cross_period_queries": 11
+      },
+      "k_values": [
+        10
+      ],
+      "queries_subdir": "queries_class",
+      "use_llm": true,
+      "max_workers": 5
+    }
+  },
+  "k_values": [
+    10
+  ],
+  "queries_subdir": "queries_class",
+  "use_llm": true,
+  "max_workers": 5,
+  "domains": [
+    "bitcoin",
+    "cardano",
+    "economics",
+    "genealogy",
+    "history",
+    "hsm",
+    "iota",
+    "law",
+    "monero",
+    "politics",
+    "quant",
+    "travel",
+    "workplace"
+  ]
+}
