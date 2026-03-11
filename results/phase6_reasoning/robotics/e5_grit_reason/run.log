@@ -1,7 +1,0 @@
-/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-Dataset source: xlangai/BRIGHT
-sigir_results/phase6_reasoning/robotics/e5_grit_reason/robotics_e5_long_False/grit_reason_score.json exists
-  0%|          | 0/101 [00:00<?, ?it/s]100%|██████████| 101/101 [00:00<00:00, 26589.55it/s]
-sigir_results/phase6_reasoning/robotics/e5_grit_reason/robotics_e5_long_False
-{'NDCG@1': 0.10891, 'NDCG@5': 0.10747, 'NDCG@10': 0.10848, 'NDCG@25': 0.13371, 'NDCG@50': 0.15275, 'NDCG@100': 0.17018, 'MAP@1': 0.03485, 'MAP@5': 0.06537, 'MAP@10': 0.07128, 'MAP@25': 0.08295, 'MAP@50': 0.08707, 'MAP@100': 0.08953, 'Recall@1': 0.03485, 'Recall@5': 0.09241, 'Recall@10': 0.11745, 'Recall@25': 0.21323, 'Recall@50': 0.27481, 'Recall@100': 0.34485, 'P@1': 0.10891, 'P@5': 0.06337, 'P@10': 0.04653, 'P@25': 0.03604, 'P@50': 0.02535, 'P@100': 0.01653, 'MRR': 0.15832, 'Oracle NDCG@1': 0.52475, 'Oracle NDCG@5': 0.4511, 'Oracle NDCG@10': 0.41889, 'Oracle NDCG@25': 0.39481, 'Oracle NDCG@50': 0.39704, 'Oracle NDCG@100': 0.39777}

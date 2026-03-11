@@ -11,7 +11,7 @@ from utils.eval_util import calculate_retrieval_metrics
 
 
 def reassign_score(scores):
-    # 排第一的分数为1，其他文档分数按排名log缩放
+
     for qid in scores:
         num_docs = len(scores[qid])
         for rank, did in enumerate(scores[qid]):
@@ -66,7 +66,6 @@ if __name__=='__main__':
             ground_truth[e['id']][gid] = 1
     
 
-    # 加载listwise reranker分数，并计算各文档按排名顺序的得分
     print("list rerank file: ", args.listwise_score_file)
     if args.listwise_score_file is not None:
         with open(args.listwise_score_file) as f:
@@ -77,7 +76,6 @@ if __name__=='__main__':
         list_rerank_scores = None
     
     
-    # 加载point reranker分数，并计算各文档按排名顺序的得分
     print("point rerank file: ", args.pointwise_score_file)
     if args.pointwise_score_file is not None:
         with open(args.pointwise_score_file) as f:
@@ -89,12 +87,10 @@ if __name__=='__main__':
 
 
     if point_rerank_scores is not None:
-        # 加权两种排名后的输出文件
         outputs_path = args.output_dir  
         if not os.path.exists(outputs_path):
             os.makedirs(outputs_path)
 
-        # 计算分数
         rerank_interpolated_scores = {}
         for qid in point_rerank_scores:
             rerank_interpolated_scores[qid] = {}
@@ -103,7 +99,6 @@ if __name__=='__main__':
             rerank_interpolated_scores[qid] = dict(sorted(rerank_interpolated_scores[qid].items(),key=lambda x:x[1],reverse=True))
         results = calculate_retrieval_metrics(results=rerank_interpolated_scores, qrels=ground_truth)
 
-        # 保存加权分数和指标结果
         with open(os.path.join(outputs_path, f"reranker_point_list_results.json"), 'w') as f:
             json.dump(results, f, indent=2)
         with open(os.path.join(outputs_path, f"{args.reasoning}_score.json"), 'w') as f:

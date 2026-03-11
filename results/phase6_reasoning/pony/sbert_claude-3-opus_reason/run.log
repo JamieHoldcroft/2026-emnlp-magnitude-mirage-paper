@@ -1,12 +1,0 @@
-/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-[2026-01-31 00:10:39] INFO SentenceTransformer.py:210: Use pytorch device_name: cuda
-[2026-01-31 00:10:39] INFO SentenceTransformer.py:218: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
-Dataset source: xlangai/BRIGHT
-The scores file does not exist, start retrieving...
-112 queries
-7894 documents
-Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.29it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.29it/s]
-  0%|          | 0/112 [00:00<?, ?it/s]100%|██████████| 112/112 [00:00<00:00, 21460.12it/s]
-sigir_results/phase6_reasoning/pony/sbert_claude-3-opus_reason/pony_sbert_long_False
-{'NDCG@1': 0.04464, 'NDCG@5': 0.05766, 'NDCG@10': 0.05773, 'NDCG@25': 0.06106, 'NDCG@50': 0.08216, 'NDCG@100': 0.1059, 'MAP@1': 0.0031, 'MAP@5': 0.00985, 'MAP@10': 0.01403, 'MAP@25': 0.01982, 'MAP@50': 0.0244, 'MAP@100': 0.02796, 'Recall@1': 0.0031, 'Recall@5': 0.01791, 'Recall@10': 0.03282, 'Recall@25': 0.06577, 'Recall@50': 0.10776, 'Recall@100': 0.16177, 'P@1': 0.04464, 'P@5': 0.05893, 'P@10': 0.05625, 'P@25': 0.045, 'P@50': 0.03732, 'P@100': 0.02866, 'MRR': 0.13467, 'Oracle NDCG@1': 0.6875, 'Oracle NDCG@5': 0.48299, 'Oracle NDCG@10': 0.37076, 'Oracle NDCG@25': 0.2533, 'Oracle NDCG@50': 0.2521, 'Oracle NDCG@100': 0.2521}

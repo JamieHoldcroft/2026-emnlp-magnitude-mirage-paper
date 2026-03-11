@@ -1,21 +1,0 @@
-/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-INFO 02-08 21:16:57 [__init__.py:216] Automatically detected platform cuda.
-Dataset source: xlangai/BRIGHT
-Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'claude-3-opus_reason' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/claude-3-opus_reason/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Sat Feb  7 03:53:48 2026).
-Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'documents' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/documents/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Thu Feb  5 21:44:01 2026).
-The scores file does not exist, start retrieving...
-103 queries
-57359 documents
-`torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 109.17it/s]
-WARNING: No config instructions found for ReasonIR. Using default instructions.
-doc max length: 32768
-query max length: 32768
-  0%|          | 0/103 [00:00<?, ?it/s]100%|██████████| 103/103 [00:00<00:00, 19104.64it/s]
-sigir_results/phase6_reasoning/biology/reasonir_claude-3-opus_reason/biology_reasonir_long_False
-{'NDCG@1': 0.43689, 'NDCG@5': 0.39857, 'NDCG@10': 0.44161, 'NDCG@25': 0.4834, 'NDCG@50': 0.51539, 'NDCG@100': 0.53889, 'MAP@1': 0.15575, 'MAP@5': 0.29616, 'MAP@10': 0.34065, 'MAP@25': 0.36571, 'MAP@50': 0.37438, 'MAP@100': 0.37809, 'Recall@1': 0.15575, 'Recall@5': 0.38569, 'Recall@10': 0.50797, 'Recall@25': 0.625, 'Recall@50': 0.74139, 'Recall@100': 0.84109, 'P@1': 0.43689, 'P@5': 0.25049, 'P@10': 0.17573, 'P@25': 0.09087, 'P@50': 0.05359, 'P@100': 0.03019, 'MRR': 0.5393, 'Oracle NDCG@1': 0.93204, 'Oracle NDCG@5': 0.86668, 'Oracle NDCG@10': 0.86417, 'Oracle NDCG@25': 0.86316, 'Oracle NDCG@50': 0.86316, 'Oracle NDCG@100': 0.86421}

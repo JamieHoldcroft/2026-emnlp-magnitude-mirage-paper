@@ -1,13 +1,0 @@
-/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-[2026-01-31 01:50:08] INFO SentenceTransformer.py:210: Use pytorch device_name: cuda
-[2026-01-31 01:50:08] INFO SentenceTransformer.py:218: Load pretrained SentenceTransformer: nomic-ai/nomic-embed-text-v1.5
-[2026-01-31 01:50:11] WARNING modeling_hf_nomic_bert.py:466: <All keys matched successfully>
-Dataset source: xlangai/BRIGHT
-The scores file does not exist, start retrieving...
-142 queries
-413932 documents
-Batches:   0%|          | 0/142 [00:00<?, ?it/s]Batches:   1%|          | 1/142 [00:00<00:14,  9.47it/s]Batches:   7%|▋         | 10/142 [00:00<00:02, 53.93it/s]Batches:  14%|█▍        | 20/142 [00:00<00:01, 72.58it/s]Batches:  21%|██        | 30/142 [00:00<00:01, 82.32it/s]Batches:  29%|██▉       | 41/142 [00:00<00:01, 89.64it/s]Batches:  37%|███▋      | 52/142 [00:00<00:00, 94.95it/s]Batches:  44%|████▎     | 62/142 [00:00<00:01, 58.85it/s]Batches:  51%|█████▏    | 73/142 [00:01<00:00, 69.28it/s]Batches:  60%|█████▉    | 85/142 [00:01<00:00, 80.42it/s]Batches:  68%|██████▊   | 97/142 [00:01<00:00, 89.26it/s]Batches:  77%|███████▋  | 110/142 [00:01<00:00, 98.32it/s]Batches:  87%|████████▋ | 123/142 [00:01<00:00, 105.91it/s]Batches:  96%|█████████▌| 136/142 [00:01<00:00, 112.03it/s]Batches: 100%|██████████| 142/142 [00:01<00:00, 88.60it/s] 
-  0%|          | 0/142 [00:00<?, ?it/s]100%|██████████| 142/142 [00:00<00:00, 5281.09it/s]
-sigir_results/phase6_reasoning/leetcode/nomic_claude-3-opus_reason/leetcode_nomic_long_False
-{'NDCG@1': 0.21127, 'NDCG@5': 0.19878, 'NDCG@10': 0.21013, 'NDCG@25': 0.2306, 'NDCG@50': 0.24905, 'NDCG@100': 0.25818, 'MAP@1': 0.12218, 'MAP@5': 0.16503, 'MAP@10': 0.17109, 'MAP@25': 0.17634, 'MAP@50': 0.17961, 'MAP@100': 0.18066, 'Recall@1': 0.12218, 'Recall@5': 0.21408, 'Recall@10': 0.24354, 'Recall@25': 0.31221, 'Recall@50': 0.39671, 'Recall@100': 0.44131, 'P@1': 0.21127, 'P@5': 0.08451, 'P@10': 0.04859, 'P@25': 0.02507, 'P@50': 0.01507, 'P@100': 0.00859, 'MRR': 0.26823, 'Oracle NDCG@1': 0.58451, 'Oracle NDCG@5': 0.47595, 'Oracle NDCG@10': 0.47796, 'Oracle NDCG@25': 0.4878, 'Oracle NDCG@50': 0.49767, 'Oracle NDCG@100': 0.50983}

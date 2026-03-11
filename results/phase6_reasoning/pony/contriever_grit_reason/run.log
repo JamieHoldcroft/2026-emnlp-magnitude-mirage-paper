@@ -1,9 +1,0 @@
-/home/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-Dataset source: xlangai/BRIGHT
-The scores file does not exist, start retrieving...
-112 queries
-7894 documents
-  0%|          | 0/112 [00:00<?, ?it/s]100%|██████████| 112/112 [00:00<00:00, 21075.96it/s]
-sigir_results/phase6_reasoning/pony/contriever_grit_reason/pony_contriever_long_False
-{'NDCG@1': 0.04464, 'NDCG@5': 0.05011, 'NDCG@10': 0.0472, 'NDCG@25': 0.04699, 'NDCG@50': 0.06222, 'NDCG@100': 0.08509, 'MAP@1': 0.00331, 'MAP@5': 0.00769, 'MAP@10': 0.01029, 'MAP@25': 0.0133, 'MAP@50': 0.01537, 'MAP@100': 0.01803, 'Recall@1': 0.00331, 'Recall@5': 0.01542, 'Recall@10': 0.03087, 'Recall@25': 0.05387, 'Recall@50': 0.08351, 'Recall@100': 0.13341, 'P@1': 0.04464, 'P@5': 0.05357, 'P@10': 0.04464, 'P@25': 0.03143, 'P@50': 0.02679, 'P@100': 0.02348, 'MRR': 0.12367, 'Oracle NDCG@1': 0.74107, 'Oracle NDCG@5': 0.49045, 'Oracle NDCG@10': 0.34757, 'Oracle NDCG@25': 0.23449, 'Oracle NDCG@50': 0.23358, 'Oracle NDCG@100': 0.23358}

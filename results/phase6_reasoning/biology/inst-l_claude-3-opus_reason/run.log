@@ -1,14 +1,0 @@
-/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-/leonardo/home/userexternal/aabdalla/.conda/envs/swift/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-INFO 02-08 22:14:09 [__init__.py:216] Automatically detected platform cuda.
-Dataset source: xlangai/BRIGHT
-Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'claude-3-opus_reason' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/claude-3-opus_reason/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Sat Feb  7 03:53:48 2026).
-Using the latest cached version of the dataset since xlangai/BRIGHT couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'documents' at /leonardo_scratch/fast/L-AUT_024/.cache/huggingface/datasets/xlangai___bright/documents/0.0.0/3066d29c9651a576c8aba4832d249807b181ecae (last modified on Thu Feb  5 21:44:01 2026).
-sigir_results/phase6_reasoning/biology/inst-l_claude-3-opus_reason/biology_inst-l_long_False/claude-3-opus_reason_score.json exists
-  0%|          | 0/103 [00:00<?, ?it/s]100%|██████████| 103/103 [00:00<00:00, 19339.84it/s]
-sigir_results/phase6_reasoning/biology/inst-l_claude-3-opus_reason/biology_inst-l_long_False
-{'NDCG@1': 0.37864, 'NDCG@5': 0.34512, 'NDCG@10': 0.3757, 'NDCG@25': 0.4249, 'NDCG@50': 0.44444, 'NDCG@100': 0.46356, 'MAP@1': 0.12455, 'MAP@5': 0.26592, 'MAP@10': 0.29404, 'MAP@25': 0.31315, 'MAP@50': 0.31947, 'MAP@100': 0.32249, 'Recall@1': 0.12455, 'Recall@5': 0.34041, 'Recall@10': 0.42452, 'Recall@25': 0.56616, 'Recall@50': 0.6324, 'Recall@100': 0.71393, 'P@1': 0.37864, 'P@5': 0.21942, 'P@10': 0.14757, 'P@25': 0.07961, 'P@50': 0.04524, 'P@100': 0.02553, 'MRR': 0.47007, 'Oracle NDCG@1': 0.8835, 'Oracle NDCG@5': 0.76599, 'Oracle NDCG@10': 0.75887, 'Oracle NDCG@25': 0.75537, 'Oracle NDCG@50': 0.75604, 'Oracle NDCG@100': 0.75736}

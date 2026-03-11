@@ -1,7 +1,0 @@
-/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-Dataset source: xlangai/BRIGHT
-sigir_results/phase6_reasoning/leetcode/bge_gpt4_reason/leetcode_bge_long_False/gpt4_reason_score.json exists
-  0%|          | 0/142 [00:00<?, ?it/s]100%|██████████| 142/142 [00:00<00:00, 4936.97it/s]
-sigir_results/phase6_reasoning/leetcode/bge_gpt4_reason/leetcode_bge_long_False
-{'NDCG@1': 0.23239, 'NDCG@5': 0.21797, 'NDCG@10': 0.24209, 'NDCG@25': 0.26969, 'NDCG@50': 0.28245, 'NDCG@100': 0.28996, 'MAP@1': 0.13275, 'MAP@5': 0.18282, 'MAP@10': 0.1936, 'MAP@25': 0.20183, 'MAP@50': 0.20375, 'MAP@100': 0.20443, 'Recall@1': 0.13275, 'Recall@5': 0.23603, 'Recall@10': 0.29953, 'Recall@25': 0.39718, 'Recall@50': 0.45293, 'Recall@100': 0.49542, 'P@1': 0.23239, 'P@5': 0.09296, 'P@10': 0.05845, 'P@25': 0.03014, 'P@50': 0.01718, 'P@100': 0.0093, 'MRR': 0.29623, 'Oracle NDCG@1': 0.6338, 'Oracle NDCG@5': 0.53079, 'Oracle NDCG@10': 0.53079, 'Oracle NDCG@25': 0.53827, 'Oracle NDCG@50': 0.54569, 'Oracle NDCG@100': 0.5529}

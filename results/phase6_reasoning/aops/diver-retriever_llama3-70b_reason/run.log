@@ -1,8 +1,0 @@
-/data/fs201059/aa17626/miniconda3/envs/swift_1/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
-  import pynvml  # type: ignore[import]
-INFO 02-01 18:11:42 [__init__.py:235] Automatically detected platform cuda.
-Dataset source: xlangai/BRIGHT
-sigir_results/phase6_reasoning/aops/diver-retriever_llama3-70b_reason/aops_diver-retriever_long_False/llama3-70b_reason_score.json exists
-  0%|          | 0/111 [00:00<?, ?it/s] 24%|██▍       | 27/111 [00:00<00:00, 268.82it/s] 54%|█████▍    | 60/111 [00:00<00:00, 303.71it/s] 82%|████████▏ | 91/111 [00:00<00:00, 256.58it/s]100%|██████████| 111/111 [00:00<00:00, 289.71it/s]
-sigir_results/phase6_reasoning/aops/diver-retriever_llama3-70b_reason/aops_diver-retriever_long_False
-{'NDCG@1': 0.11712, 'NDCG@5': 0.09091, 'NDCG@10': 0.09892, 'NDCG@25': 0.12677, 'NDCG@50': 0.14827, 'NDCG@100': 0.16568, 'MAP@1': 0.02451, 'MAP@5': 0.0462, 'MAP@10': 0.05506, 'MAP@25': 0.06383, 'MAP@50': 0.06816, 'MAP@100': 0.07056, 'Recall@1': 0.02451, 'Recall@5': 0.07196, 'Recall@10': 0.11111, 'Recall@25': 0.18699, 'Recall@50': 0.25483, 'Recall@100': 0.32255, 'P@1': 0.11712, 'P@5': 0.06847, 'P@10': 0.05045, 'P@25': 0.03207, 'P@50': 0.0227, 'P@100': 0.01459, 'MRR': 0.19435, 'Oracle NDCG@1': 0.57658, 'Oracle NDCG@5': 0.41827, 'Oracle NDCG@10': 0.38581, 'Oracle NDCG@25': 0.39636, 'Oracle NDCG@50': 0.40707, 'Oracle NDCG@100': 0.41114}
