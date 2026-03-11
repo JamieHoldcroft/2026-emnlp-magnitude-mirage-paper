@@ -3,8 +3,13 @@ import numpy as np
 from pathlib import Path
 
 # Define paths and lists from the provided content
+BEIR_PATH = Path('qpp_results/BEIR')
 BRIGHT_PATH = Path('qpp_results/BRIGHT')
 TEMPO_PATH = Path('qpp_results/TEMPO')
+
+BEIR_TASKS=[
+    "fiqa", "nfcorpus", "scidocs", "scifact",
+]
 
 BRIGHT_TASKS=[
     "biology", "aops", "earth_science", "economics", "leetcode", "pony",
@@ -97,6 +102,7 @@ def calculate_average_qpp_results(dataset_family_name, tasks, output_base_path):
         print(f"Generated averaged results for model '{model}' in {output_file_path}")
 
 def main():
+    calculate_average_qpp_results("BEIR", BEIR_TASKS, BEIR_PATH)
     calculate_average_qpp_results("BRIGHT", BRIGHT_TASKS, BRIGHT_PATH)
     calculate_average_qpp_results("TEMPO", TEMPO_TASKS, TEMPO_PATH)
 

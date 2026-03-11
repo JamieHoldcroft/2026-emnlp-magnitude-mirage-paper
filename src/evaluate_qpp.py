@@ -74,7 +74,7 @@ def calculate_max_score(scores):
 
 def calculate_score_gap(scores, k):
     """Score Gap / Top-to-Tail Dropoff: The difference between the 1st document score and the k-th document score."""
-    if len(scores) < k or k == 0: # k=0 should be handled by caller, but defensive check
+    if len(scores) < k or k == 0:
         return 0.0
     return scores[0] - scores[k-1]
 

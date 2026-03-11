@@ -4,15 +4,15 @@
 #
 # This script runs the Query Performance Prediction (QPP) analysis
 # across multiple dataset families (BEIR, BRIGHT, TEMPO), models, and tasks.
-# It calculates 7 QPP metrics, NDCG, AUROC, and their correlations.
+# It calculates 6 QPP metrics, NDCG, AUROC, and their correlations.
 #
 # Usage:
 # ./scripts/run_qpp_eval.sh <model_1> <model_2> ...
 # e.g.,
-# ./scripts/run_qpp_eval.sh google bge openai
+# ./scripts/run_qpp_eval.sh bge diver-retriever
 
 # --- Configuration ---
-set -ex  # Exit immediately if a command exits with a non-zero status, and print commands and their arguments as they are executed.
+set -ex 
 
 # Define dataset families and their respective tasks
 BEIR_TASKS=(
@@ -21,7 +21,6 @@ BEIR_TASKS=(
     "nfcorpus" 
     "scidocs"
     "scifact" 
-    "webis-touche2020"
     )
 
 BRIGHT_TASKS=(
