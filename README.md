@@ -1,6 +1,6 @@
 # Systematic Audit of Confidence Signals in RAG
 
-This repository contains the evaluation framework and codebase for the paper: **'Do Retrievers Know When They Fail? An An Empirical Study of Confidence Signals for Predicting Retrieval Success.'**
+This repository contains the evaluation framework and codebase for the paper: **'The Magnitude Mirage: Rethinking Confidence for Reasoning-Intensive Retrieval'**
 
 ## Project Overview
 
