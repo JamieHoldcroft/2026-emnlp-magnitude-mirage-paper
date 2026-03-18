@@ -66,7 +66,7 @@ def main():
     parser.add_argument("--dataset_family", type=str, required=True, choices=["BEIR", "BRIGHT", "TEMPO"])
     parser.add_argument("--task", type=str, required=True, help="Task name (e.g., biology)")
     parser.add_argument("--k", type=int, default=10, help="Cutoff K for variance calculation")
-    parser.add_argument("--out", type=str, default="decision_boundary.pdf", help="Output filename")
+    parser.add_argument("--out", type=str, default="decision_boundary.png", help="Output filename")
     args = parser.parse_args()
 
     # Automatically resolve the correct filepath based on your bash script's structure
@@ -127,16 +127,16 @@ def main():
     # Add illustrative decision boundaries
     # Vertical Line: LangChain's static threshold (estimated median of MaxScores)
     median_max = np.median(successful_x + failed_x)
-    ax.axvline(x=median_max, color='black', linestyle='--', linewidth=2, label='LangChain Threshold')
+    ax.axvline(x=median_max, color='black', linestyle='--', linewidth=2, label='Similarity Threshold')
     
     # Horizontal Line: Variance threshold (estimated threshold separating red from green)
     # We estimate a good variance split visually
     median_var = np.median(successful_y)
     ax.axhline(y=median_var, color='blue', linestyle=':', linewidth=2, label='Variance Threshold')
 
-    ax.set_title(f"The Magnitude Mirage ({args.model.upper()} on {args.task.capitalize()})", pad=15, fontweight="bold")
+    ax.set_title(f"The Magnitude Mirage ({args.model.upper()} on TheoremQA Questions)", pad=15, fontweight="bold")
     ax.set_xlabel(r"Absolute Magnitude ($s_1$)")
-    ax.set_ylabel(rf"Top-{args.k} Variance ($\sigma_{{{args.k}}}$)")
+    ax.set_ylabel(rf"Top-{args.k} Score Variance ($\sigma^2_{{{args.k}}}$)")
     ax.legend(loc='best', frameon=True, shadow=True)
 
     plt.tight_layout()

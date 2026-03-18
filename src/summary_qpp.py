@@ -3,9 +3,9 @@ import numpy as np
 from pathlib import Path
 
 # Define paths and lists from the provided content
-BEIR_PATH = Path('qpp_results/BEIR')
-BRIGHT_PATH = Path('qpp_results/BRIGHT')
-TEMPO_PATH = Path('qpp_results/TEMPO')
+BEIR_PATH = Path('results/qpp_results/BEIR')
+BRIGHT_PATH = Path('results/qpp_results/BRIGHT')
+TEMPO_PATH = Path('results/qpp_results/TEMPO')
 
 BEIR_TASKS=[
     "fiqa", "nfcorpus", "scidocs", "scifact",

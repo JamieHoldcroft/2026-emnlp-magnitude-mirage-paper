@@ -39,7 +39,7 @@ def main():
     parser.add_argument("--model", type=str, required=True, help="Model internal name (e.g., 'bge', 'e5')")
     parser.add_argument("--display_name", type=str, default=None, help="Model name for the plot title (e.g., 'BGE-M3')")
     parser.add_argument("--k", type=int, default=25, help="Cutoff k to plot (default: 25)")
-    parser.add_argument("--out", type=str, default="performance_cliff.pdf", help="Output filename (e.g., plot.pdf)")
+    parser.add_argument("--out", type=str, default="performance_cliff.png", help="Output filename (e.g., plot.png)")
     args = parser.parse_args()
 
     base_dir = "results/qpp_results"
@@ -68,12 +68,12 @@ def main():
     # Plot MaxScore (The Cliff) - Red, dashed, circle markers
     ax.plot(x_positions, metrics["MaxScore"], marker='o', markersize=9, 
             linestyle='--', linewidth=2.5, color='#D62728', 
-            label='MaxScore ($s_1$) [Industry Std]')
+            label='MaxScore ($s_1$)')
 
     # Plot SMV (The Stable Baseline) - Blue, solid, square markers
     ax.plot(x_positions, metrics["SMV"], marker='s', markersize=9, 
             linestyle='-', linewidth=2.5, color='#1F77B4', 
-            label='SMV [Variance]')
+            label='L-SMV')
 
     # Add the "Random Guessing" baseline
     ax.axhline(y=0.5, color='gray', linestyle=':', linewidth=1.5, zorder=0)
@@ -82,8 +82,8 @@ def main():
     # Formatting axes
     ax.set_xticks(x_positions)
     ax.set_xticklabels(x_labels)
-    ax.set_ylabel(f"AUROC @ {args.k} (Binary Query Success)")
-    ax.set_title(f"The Calibration Collapse: {display_name} Retriever", pad=15, fontweight="bold")
+    ax.set_ylabel(f"AUROC (Retrieval Success, NDCG@25 > 0)")
+    ax.set_title(f"The Calibration Collapse of Magnitude-Based Confidence \n(ReasonIR Retriever)", pad=15, fontweight="bold")
     
     # Adjust Y-axis limits dynamically based on data, but ensure 0.45 is the minimum
     min_val = min(min(metrics["MaxScore"]), min(metrics["SMV"]))
