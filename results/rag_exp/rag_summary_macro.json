@@ -1,0 +1,35 @@
+{
+  "n_retrievers": 14,
+  "retrievers": [
+    "bm25",
+    "sbert",
+    "contriever",
+    "e5",
+    "bge",
+    "sf",
+    "inst-l",
+    "inst-xl",
+    "qwen",
+    "qwen2",
+    "nomic",
+    "rader",
+    "reasonir",
+    "diver-retriever"
+  ],
+  "n_queries_total": 19376,
+  "macro_answer_auroc": {
+    "max_score": 0.5131822258334923,
+    "gap_ctx": 0.5551128670068715,
+    "gap_25": 0.5728805398190986
+  },
+  "macro_retrieval5_auroc": {
+    "max_score": 0.5377587761081939,
+    "gap_ctx": 0.6586124524276323,
+    "gap_25": 0.6714232365761666
+  },
+  "macro_retrieval25_auroc": {
+    "max_score": 0.5216727397497006,
+    "gap_ctx": 0.6166677694338442,
+    "gap_25": 0.6379247653469611
+  }
+}

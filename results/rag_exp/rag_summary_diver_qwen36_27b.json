@@ -1,0 +1,86 @@
+{
+  "retriever": "diver-retriever",
+  "generator": "Qwen/Qwen3.6-27B (vLLM)",
+  "judge": "Qwen/Qwen3.6-27B (vLLM)",
+  "top_k": 5,
+  "total_queries": 1384,
+  "overall_accuracy_pct": 25.29,
+  "auroc_score_gap_micro": 0.5218,
+  "auroc_max_score_micro": 0.4607,
+  "auroc_score_gap_macro": 0.5528,
+  "auroc_max_score_macro": 0.5569,
+  "per_task": [
+    {
+      "task": "aops",
+      "n": 111,
+      "auroc_score_gap": 0.7792452830188679,
+      "auroc_max_score": 0.8735849056603774
+    },
+    {
+      "task": "biology",
+      "n": 103,
+      "auroc_score_gap": 0.6275038520801233,
+      "auroc_max_score": 0.5181047765793528
+    },
+    {
+      "task": "earth_science",
+      "n": 116,
+      "auroc_score_gap": 0.6464285714285715,
+      "auroc_max_score": 0.5883928571428572
+    },
+    {
+      "task": "economics",
+      "n": 103,
+      "auroc_score_gap": 0.5550682261208577,
+      "auroc_max_score": 0.48294346978557506
+    },
+    {
+      "task": "leetcode",
+      "n": 142,
+      "auroc_score_gap": 0.6321167883211678,
+      "auroc_max_score": 0.7591240875912408
+    },
+    {
+      "task": "pony",
+      "n": 112,
+      "auroc_score_gap": 0.4772135416666667,
+      "auroc_max_score": 0.5930989583333333
+    },
+    {
+      "task": "psychology",
+      "n": 101,
+      "auroc_score_gap": 0.56,
+      "auroc_max_score": 0.5568627450980391
+    },
+    {
+      "task": "robotics",
+      "n": 101,
+      "auroc_score_gap": 0.49592391304347827,
+      "auroc_max_score": 0.5788043478260869
+    },
+    {
+      "task": "stackoverflow",
+      "n": 117,
+      "auroc_score_gap": 0.5055555555555555,
+      "auroc_max_score": 0.4456790123456791
+    },
+    {
+      "task": "sustainable_living",
+      "n": 108,
+      "auroc_score_gap": 0.5512345679012346,
+      "auroc_max_score": 0.6679012345679012
+    },
+    {
+      "task": "theoremqa_questions",
+      "n": 194,
+      "auroc_score_gap": 0.4072787427626137,
+      "auroc_max_score": 0.31811414392059556
+    },
+    {
+      "task": "theoremqa_theorems",
+      "n": 76,
+      "auroc_score_gap": 0.39560439560439564,
+      "auroc_max_score": 0.3003663003663004
+    }
+  ]
+}

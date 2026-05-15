@@ -1,2 +1,3 @@
 cache/
 .vscode/
+scripts/.azure.env
