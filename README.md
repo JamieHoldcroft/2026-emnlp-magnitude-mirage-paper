@@ -87,7 +87,6 @@ We conduct a large-scale empirical study evaluating **6 zero-cost QPP metrics** 
 │   └── rag_exp/                     # RAG experiment results
 ├── 📂 baselines/                    # Baseline implementations
 └── 📂 docs/                         # Documentation & supplementary material
-    └── reviews/                     # Peer review materials
 ```
 
 ---
