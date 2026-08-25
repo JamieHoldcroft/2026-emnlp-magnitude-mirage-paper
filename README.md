@@ -159,7 +159,7 @@ If you find this work useful, please cite:
 ```bibtex
 @inproceedings{holdcroft2026magnitude,
   title     = {The Magnitude Mirage: Rethinking Confidence for Reasoning-Intensive Retrieval},
-  author    = {Holdcroft, Jamie},
+  author    = {Holdcroft, Jamie and Abdallah, Abdelrahman and Jatowt, Adam},
   booktitle = {Proceedings of EMNLP 2026},
   year      = {2026}
 }

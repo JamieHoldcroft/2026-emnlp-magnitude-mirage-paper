@@ -1,4 +1,4 @@
-# src/summarize_auroc.py
+# src/aggregate_auroc.py
 
 import json
 import argparse
