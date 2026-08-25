@@ -1,4 +1,4 @@
-# src/confidence_auroc.py
+# src/compute_auroc.py
 
 import sys
 import json
